@@ -1,0 +1,43 @@
+[general]
+name=VROOM for QGIS (Processing)
+qgisMinimumVersion=3.0
+description=This plugin makes it possible to send data from a QGIS layer to VROOM.
+version=0.1
+author=Suddber
+email=suddb@posteo.de
+
+about=This plugin makes it possible to send data from a QGIS layer to VROOM. Chosse a layer for vehicle locations, a layer for pickup locations and a layer for delivery locations. For several features of the three entities you can pick corresponding fields from your QGIS layers. For how to use and set up VROOM, visit the VROOM GitHub page: https://github.com/VROOM-Project/vroom Especially visit the explanation of the VROOM API, which is used by this plugin: https://github.com/VROOM-Project/vroom/blob/master/docs/API.md
+
+tracker=https://github.com/Suddber/VROOM_for_QGIS/issues
+repository=https://github.com/Suddber/VROOM_for_QGIS
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=yes
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=routing
+
+homepage=https://github.com/Suddber/VROOM_for_QGIS
+category=Analysis
+icon=icon.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
+
+Category of the plugin: Raster, Vector, Database or Web
+# category=
+
+# If the plugin can run on QGIS Server.
+server=False
+
