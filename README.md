@@ -28,8 +28,8 @@ Most Options refer to [features of the VROOM API](https://github.com/VROOM-Proje
 | Option | Description |
 |--------|-------------|
 | Use Openrouteservice (ORS) for routes | Tick it, if you are using ORS as the routing engine for VROOM or the ORS Optimization API. |
-| Use ORS directions API | Tick it, if you are using the ORS optimization API (not the directions API, labeling is currently misleading). |
-| Key for ORS directions API | Put your ORS API key here. |
+| Use ORS optimization API | Tick it, if you are using the ORS optimization API. |
+| Key for ORS optimization API | Put your ORS API key here. |
 | Travel mode for ORS | Select your preferred travel mode for ORS here. If you are using OSRM or Valhalla, it has no effect. |
 | Port number of running Vroom Express | Put the port number (normally 3000) here. If you are using the ORS optimization API, this has no effect. |
 | Layer with vehicle points | Select the layer, where the depot positions and features of your vehicles are stored. |
@@ -41,7 +41,7 @@ Most Options refer to [features of the VROOM API](https://github.com/VROOM-Proje
 | Field for time window arrays of vehicles (in seconds) | Select the field of the vehicle layer, where the vehicle [[`time windows`]] array is stored. |
 | speed factor in the range (0, 5] (default 1), precision is two decimal points | Select the field of the vehicle layer, where the vehicle `speed factor` is stored. |
 | Field for maximum number of tasks of vehicle | Select the field of the vehicle layer, where the vehicle `max_tasks` is stored. |
-| Field for maximum travel time in seconds | Select the field of the vehicle layer, where the vehicle `max_travel_time` is stored. |
+| Field for maximum travel time (in seconds) | Select the field of the vehicle layer, where the vehicle `max_travel_time` is stored. |
 | Field for maximum distance in meters | Select the field of the vehicle layer, where the vehicle `max_distance` is stored. |
 | Field for array of break objects | Select the field of the vehicle layer, where the vehicle [[`breaks`]] objects array is stored. |
 | Layer with pickup points | Select the layer, where the positions and features of your pickup points are stored. |
@@ -50,14 +50,14 @@ Most Options refer to [features of the VROOM API](https://github.com/VROOM-Proje
 | Field for skills array | Select the field of the pickup layer, where the [`skills`] array for the shipment is stored. |
 | Field for pickup description | Select the field of the pickup layer, where the `description` of pickup points is stored. |
 | Field for priority of shipment (number from 0 to 100) | Select the field of the pickup layer, where the [`priority`] array for the shipment is stored. |
-| Field for setup duration of pickup in seconds | Select the field of the pickup layer, where the `setup` duration for pickup is stored. |
-| Field for service duration of pickup in seconds | Select the field of the pickup layer, where the `service` duration for pickup is stored. |
+| Field for setup duration of pickup (in seconds) | Select the field of the pickup layer, where the `setup` duration for pickup is stored. |
+| Field for service duration of pickup (in seconds) | Select the field of the pickup layer, where the `service` duration for pickup is stored. |
 | Field for time windows array of pickup (in seconds) | Select the field of the pickup layer, where the [[`time windows`]] array for pickup is stored. |
 | Layer with delivery points | Select the layer, where the positions and features of your delivery points are stored. |
 | End ID Field | Select an id field, which connects the delivery points to the corresponding pickup points. |
-| Field description of delivery | Select the field of the delivery layer, where the `description` of delivery points is stored. |
-| Field for setup duration of delivery | Select the field of the delivery layer, where the `setup` duration for delivery is stored. |
-| Field for service duration of delivery | Select the field of the delivery layer, where the `service` duration for delivery is stored. |
+| Field description of delivery (in seconds)| Select the field of the delivery layer, where the `description` of delivery points is stored. |
+| Field for setup duration of delivery  (in seconds)| Select the field of the delivery layer, where the `setup` duration for delivery is stored. |
+| Field for service duration of delivery  (in seconds)| Select the field of the delivery layer, where the `service` duration for delivery is stored. |
 | Field for time windows array of delivery (in seconds) | Select the field of the delivery layer, where the [[`time windows`]] array for delivery is stored. |
 
 
