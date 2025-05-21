@@ -131,7 +131,7 @@ class VROOM_for_QGISAlgorithm(QgsProcessingAlgorithm):
         self.addParameter(
             QgsProcessingParameterBoolean(
                 self.IN_ORS_EXT,
-                self.tr('Use ORS directions API'),
+                self.tr('Use ORS optimization API'),
                 defaultValue=False
             )
         )
@@ -139,7 +139,7 @@ class VROOM_for_QGISAlgorithm(QgsProcessingAlgorithm):
         self.addParameter(
             QgsProcessingParameterString(
                 self.IN_AUTH_KEY,
-                self.tr('Key for ORS directions API'),
+                self.tr('Key for ORS optimization API'),
                 optional=True
             )
         )
@@ -263,7 +263,7 @@ class VROOM_for_QGISAlgorithm(QgsProcessingAlgorithm):
         self.addParameter(
             QgsProcessingParameterField(
                 name=self.IN_VEHICLE_MAX_TRAVEL_TIME,
-                description="Field for maximum travel time in seconds",
+                description="Field for maximum travel time (in seconds)",
                 parentLayerParameterName=self.IN_VEHICLE_LAYER,
                 type=QgsProcessingParameterField.Numeric,
                 optional=True
@@ -349,7 +349,7 @@ class VROOM_for_QGISAlgorithm(QgsProcessingAlgorithm):
         self.addParameter(
             QgsProcessingParameterField(
                 name=self.IN_PICKUP_SETUP_DURATION_FIELD,
-                description="Field for setup duration of pickup in seconds",
+                description="Field for setup duration of pickup (in seconds)",
                 parentLayerParameterName=self.IN_PICKUP_LAYER,
                 type=QgsProcessingParameterField.Numeric,
                 optional=True
@@ -359,7 +359,7 @@ class VROOM_for_QGISAlgorithm(QgsProcessingAlgorithm):
         self.addParameter(
             QgsProcessingParameterField(
                 name=self.IN_PICKUP_SERVICE_DURATION_FIELD,
-                description="Field for service duration of pickup in seconds",
+                description="Field for service duration of pickup (in seconds)",
                 parentLayerParameterName=self.IN_PICKUP_LAYER,
                 type=QgsProcessingParameterField.Numeric,
                 optional=True
@@ -405,7 +405,7 @@ class VROOM_for_QGISAlgorithm(QgsProcessingAlgorithm):
         self.addParameter(
             QgsProcessingParameterField(
                 name=self.IN_DELIVERY_SETUP_DURATION_FIELD,
-                description="Field for setup duration of delivery",
+                description="Field for setup duration of delivery (in seconds)",
                 parentLayerParameterName=self.IN_DELIVERY_LAYER,
                 type=QgsProcessingParameterField.Numeric,
                 optional=True
@@ -415,7 +415,7 @@ class VROOM_for_QGISAlgorithm(QgsProcessingAlgorithm):
         self.addParameter(
             QgsProcessingParameterField(
                 name=self.IN_DELIVERY_SERVICE_DURATION_FIELD,
-                description="Field for service duration of delivery",
+                description="Field for service duration of delivery (in seconds)",
                 parentLayerParameterName=self.IN_DELIVERY_LAYER,
                 type=QgsProcessingParameterField.Numeric,
                 optional=True
